@@ -1,0 +1,517 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url('https://fonts.googleapis.com/css?family=Alegreya:900');
+h1
+{
+    font-family: 'Alegreya', serif;
+    color: black;
+    font-size: 53px;
+    margin-left: 40%;
+   
+}
+h3
+{
+    font-family: 'Alegreya', serif;
+    margin-top: 117px;
+    margin-left: 30%;
+    font-size: 25px;
+    color: black;
+}
+.modal__background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.modal__background:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.background {
+font-family: 'Alegreya', serif;
+  background: url("http://edgetulsa.com/wp-content/uploads/2015/07/crowd-at-concert-2.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+ 
+}
+
+.button {
+    transition: 0.25s;
+    color: black;
+    text-decoration: none;
+    margin-top: 393px;
+    height: 39px;
+    /* width: 172px; */
+    font-size: 29px;
+    padding: 0;
+    border: 1px solid black;
+    margin-left: -428px;
+    padding: 10px;
+}
+.button:hover {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+/*
+    border-left: none;
+    border-right: none;
+*/
+}
+
+h1{
+  color:black;
+  text-align:center;
+ 
+}
+.login-form
+{
+  width:350px;
+  padding:40px 30px;
+  border-radius:4px;
+}
+
+.form-control{
+    width: 85%;
+    margin-left: 15px;
+    height: 43px;
+    padding: 5px 7px 5px 15px;
+    background: #fff;
+    color: #666;
+    border: 2px solid rgb(237,137,103);
+    border-radius: 4px;
+}
+.log-btn{
+     background: green;
+    
+    width: 30%;
+    font-size: 16px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-left: 40%;
+    margin-top: 13px;
+}
+.signup
+{
+    text-decoration: none;
+    color: rgb(237,137,103);
+    display: block;
+    font-size: 12px;
+    width: 128px;
+    float: left;
+    margin-top: 10px;
+}
+.signup:hover{
+  text-decoration:underline;
+  color:rgb(237,137,103);
+}
+.link{
+  text-decoration:none;
+  color:rgb(237,137,103);
+  display:block;
+  text-align:right;
+  font-size:12px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+.link:hover{
+  text-decoration:underline;
+  color:rgb(237,137,103);
+}
+
+
+.modal__content {
+     background: #fff;
+    padding: 1rem;
+    position: relative;
+    z-index: 4;
+    height: 400px !important;
+    width: 400px !important;
+    background-image: url("images/Spinning-Record.gif");
+    
+    border-radius: 50%;
+
+    
+    background-size: cover;
+    border: none;
+
+}
+@media screen and (max-width: 699px) {
+  .modal__content {
+    margin: 2rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .modal__content {
+    margin: 4rem auto;
+    max-width: 400px;
+    min-height: 300px;
+  }
+}
+.modal__content svg,
+.modal__content path {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 25px;
+  width: 25px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  fill: #bfbfbf;
+}
+.modal__content svg:hover,
+.modal__content path:hover {
+  fill: #0c0c0c;
+}
+
+.wel
+{
+    font-size: 52px;
+    float: left;
+    margin: 0rem 0 1rem;
+    text-align: center;
+    -webkit-margin-start: 800px;
+    margin-top: 105px;
+}
+.to 
+{
+        font-size: 52px;
+    text-align: center;
+    margin-top: 173px;
+}
+.mus
+{
+          font-size: 52px;
+    text-align: center;
+    margin-top: 240px;
+    -webkit-margin-start: -290px;
+}
+.world
+{
+       font-size: 52px;
+    text-align: center;
+    margin-top: 304px;
+    -webkit-margin-start: 23px;
+
+}
+ 
+font-size: 52px;
+    float: left;
+    margin: 0rem 0 1rem;
+    text-align: center;
+    -webkit-margin-start: 800px;
+    margin-top: 105px;
+}
+.success {
+  width: 100%;
+}
+
+body{
+    margin: 0px !important;
+}
+.logg
+{
+    color: white;
+    margin-top: -13px;
+    margin-left: 113px;
+    font-family: 'Alegreya', serif;
+    font-size: 40px;
+        margin-bottom: 50px;
+}
+.main
+{
+  padding: 0px !important;
+    margin-top: -16px !important;
+    margin-top: -16px !important;
+    background:url("images/pexels-photo-96380.jpeg");
+        height: 662px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+        
+}
+.hidden
+{
+    display:none;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: transparent;
+
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a:hover 
+{
+  color: #555;
+}
+.songs
+{
+    border: 1px solid #dedede;
+    height: 103%;
+    width: 40%;
+    float: right;
+    margin-right: -382px;
+    margin-top: -9px;
+    border-radius: 5px;
+}
+.right.floated {
+  
+    
+   text-align: center;
+    color: white;
+  
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+        
+}
+.error
+{
+border:3px solid red;
+}
+.fa-play
+{
+    color: white;
+   
+    position: absolute;
+    margin-top: 5px;
+}
+.fa-pause
+{
+        position: absolute;
+    margin-top: 5px;
+    color: white;
+    color: white;
+}
+.widget{
+padding: 10px;
+    background: url(http://maxme-life.ru/tests/noise1.png), #ffe106;
+    width: 874px;
+    height: 426px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 1px 12px rgba(0,0,0,.6);
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+ .imag
+{
+      height: 343px;
+    border: none;
+    margin: 25px 70px 25px 25px;
+}
+
+.img{
+  z-index:1;
+  position:relative;
+  float: left;
+  display:inline;
+  border-radius:3px;
+      
+}
+.img:after{
+  content:"";
+  width:100%;
+  height:1px;
+  background:rgba(255,255,255,.8);
+  position:absolute;
+  bottom:0;
+  left:0;
+  margin-bottom:4px;
+}
+.img img{
+  border-radius:3px;
+  box-shadow:inset 0 0 10px rgba(0,0,0,.9);
+}
+.name{
+      padding: 10px;
+    overflow: hidden;
+    text-shadow: 0 1px 0px rgba(255,255,255,.8);
+    font-family: 'Alegreya', serif;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 8px;
+    float: right;
+    margin-left: 515px;
+}
+
+.article{
+     text-shadow: 0 1px 0px rgba(255,255,255,.8);
+    font-family: 'Alegreya', serif;
+    position: absolute;
+    margin-left: 530px;
+    margin-top: 71px;
+
+}
+
+.player{
+
+        position: absolute;
+    width: 28%;
+    margin-left: 529px;
+    margin-top: 108px;
+
+}
+
+.player_btn{
+  width:27px;height:27px;
+  background:red;
+  display:inline-block;
+}
+
+#prev{
+  background:url(http://maxme-life.ru/tests/prev.png);
+}
+#play_pause{
+  background:url(http://maxme-life.ru/tests/pause.png);
+}
+
+#next{
+  background:url(http://maxme-life.ru/tests/next.png);
+        margin-left: 16px;
+
+}
+.time{
+  vertical-align:top;
+  display:inline-block;
+  
+  padding:5px 50px;
+  text-shadow:0 1px 0px rgba(255,255,255,.8);
+}
+
+.pia
+{
+    opacity: 0.9;
+    height: 367px;
+    margin-left: 158px;
+    margin-top: 136px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.slist
+{
+    overflow: auto;
+    margin-top: 30px;
+    width: 90%;
+    color: white;
+    height: 220px;
+    position: absolute;
+    /* width: 340px; */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.current-song
+{
+   color: #fdfdfd;
+    font-family: 'Alegreya', serif;
+    padding-left: 10px;
+    border-bottom: 0.1px solid;
+}
+.current-song .active
+{
+   color: black;
+    
+}
+.duration
+{
+    font-family: 'Alegreya', serif;
+    
+        width: 22%;
+    float: right;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+#progressBar { 
+   border:1px solid #aaa; 
+   color:#fff; 
+   width:295px; 
+   height:20px;
+}
+span#progress {
+   background-color:#ff0000; 
+   height:20px;
+   display:inline-block;
+}
+.errormsg
+{
+    display: none;
+    color: red;
+    margin-left: 30px;
+}
+.errormsg .show
+{
+display: block !important;
+}
+
+
+/*  drumset  */
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
