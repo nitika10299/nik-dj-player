@@ -14,10 +14,12 @@
      $("#sng" + id).addClass("Active");     
      currenttrack = id;
      if (song != null) {
-         song.pause();
+         song.src="";
      }
+     setTimeout(function(){
      song = document.querySelector('audio[data-key="' + currenttrack + '"]');
      song.play();
+     },100);
      progressbar();
      $('.play-icon').removeClass('fa-play').addClass('fa-pause');
      $('.article').html(playlist[currenttrack]);
@@ -55,25 +57,29 @@
  $('#prev').on('click', function () {
      
      if (song != null) {
-         song.pause();
+          song.src="";
      }
      currenttrack = currenttrack - 1;
       resetactivesong();
      $("#sng" + currenttrack).addClass("Active"); 
+     setTimeout(function(){
      song = document.querySelector('audio[data-key="' + currenttrack + '"]');
      song.play();
+     },100);
      $('.article').html(playlist[currenttrack]);
  });
  $('#next').on('click', function () {
      if (song != null) {
-         song.pause();
+          song.src="";
      }
      
      currenttrack = currenttrack + 1;
      resetactivesong();
      $("#sng" + currenttrack).addClass("Active");
+    setTimeout(function(){
      song = document.querySelector('audio[data-key="' + currenttrack + '"]');
      song.play();
+     },100);
      $('.article').html(playlist[currenttrack]);
  });
 
