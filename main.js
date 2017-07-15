@@ -14,13 +14,18 @@
      $("#sng" + id).addClass("Active");     
      currenttrack = id;
      if (song != null) {
-         song.src="";
+       song.src="songs/"+playlist[currenttrack]+".mp3";
+     }
+     else
+     {
+     song = document.querySelector('audio[data-key="' + currenttrack + '"]');
      }
      setTimeout(function(){
-     song = document.querySelector('audio[data-key="' + currenttrack + '"]');
+   //  song = document.querySelector('audio[data-key="' + currenttrack + '"]');
      song.play();
-     },100);
-     progressbar();
+       progressbar();
+     },500);
+   
      $('.play-icon').removeClass('fa-play').addClass('fa-pause');
      $('.article').html(playlist[currenttrack]);
  }
@@ -56,30 +61,43 @@
  });
  $('#prev').on('click', function () {
      
-     if (song != null) {
-          song.src="";
-     }
+    
      currenttrack = currenttrack - 1;
-      resetactivesong();
+      if (song != null) {
+       song.src="songs/"+playlist[currenttrack]+".mp3";
+     }
+     else
+     {
+     song = document.querySelector('audio[data-key="' + currenttrack + '"]');
+     }
+     resetactivesong();
      $("#sng" + currenttrack).addClass("Active"); 
      setTimeout(function(){
-     song = document.querySelector('audio[data-key="' + currenttrack + '"]');
+    // song = document.querySelector('audio[data-key="' + currenttrack + '"]');
      song.play();
-     },100);
+      progressbar();
+     },500);
      $('.article').html(playlist[currenttrack]);
  });
  $('#next').on('click', function () {
-     if (song != null) {
-          song.src="";
-     }
+   
      
      currenttrack = currenttrack + 1;
+      if (song != null) {
+       song.src="songs/"+playlist[currenttrack]+".mp3";
+     }
+     else
+     {
+     song = document.querySelector('audio[data-key="' + currenttrack + '"]');
+     }
      resetactivesong();
      $("#sng" + currenttrack).addClass("Active");
     setTimeout(function(){
-     song = document.querySelector('audio[data-key="' + currenttrack + '"]');
+       
+     //song = document.querySelector('audio[data-key="' + currenttrack + '"]');
      song.play();
-     },100);
+      progressbar();
+     },500);
      $('.article').html(playlist[currenttrack]);
  });
 
