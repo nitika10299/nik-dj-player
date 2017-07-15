@@ -36,7 +36,7 @@
     <div class="main hidden">
         <div>
             <nav class="circle">
-                <ul>                    
+                <ul>
                     <li class="sir"><a href="#">NIKDJ-Player</a></li>
                     <li class="vir"><a href="#">NIKDJ-Drum</a></li>
                 </ul>
@@ -47,37 +47,56 @@
         <section class="music">
             <div class="widget">
                 <div class="img"><img src="http://www.animated-gifs.eu/category_leisure/leisure-music-equalizers/0042.gif" class="imag"></div>
-                <div class="name">Your Song</div>
+                <div class="name">NIKDJ Songs</div>
                 <div class="article">Tum_Ho</div>
 
                 <div class="player">
                     <div id="prev" class="player_btn"></div>
                     <div class=" fa fa-play clickable play-icon" aria-hidden="true"></div>
                     <div id="next" class="player_btn"></div>
+                     <div class="duration"> <span class="time-elapsed"></span>/ <span class="song-duration"></span></div>
                     <div id="progressBar"><span id="progress" style="height:20px;"></span></div>
-                    <div class="duration"> <span class="time-elapsed"></span>/ <span class="song-duration"></span></div>
-                     <div class="slist">
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
-                        <div class="current-song">Tum_Ho</div>
+                   
+                    <div class="slist">
+                        <div class="current-song" id="sng0" onClick="playsong(0)">Aur_Ho</div>
+                        <div class="current-song" id="sng1" onClick="playsong(1)">Birthday_Bash</div>
+                        <div class="current-song" id="sng2" onClick="playsong(2)">Haawa_Haawa</div>                        
+                        <div class="current-song" id="sng3" onClick="playsong(3)">Jo_Bhi_Main</div>
+                        <div class="current-song" id="sng4" onClick="playsong(4)">Katiya_Karun</div>
+                        <div class="current-song" id="sng5" onClick="playsong(5)">Naadaan_Parindey</div>
+                        <div class="current-song" id="sng6" onClick="playsong(6)">O_Re_Khuda</div>
+                        <div class="current-song" id="sng7" onClick="playsong(7)">One_Dream</div>
+                        <div class="current-song" id="sng8" onClick="playsong(8)">Phir_Se_Ud_Chala</div>
+                        <div class="current-song" id="sng9" onClick="playsong(9)">Saadda_Haq</div>
+                        <div class="current-song" id="sng10" onClick="playsong(10)">Saadi_Galli_Aaja</div>
+                        <div class="current-song" id="sng11" onClick="playsong(11)">Sheher_Mein</div>
+                        <div class="current-song" id="sng12" onClick="playsong(12)">The_Meeting_Place</div>
+                        <div class="current-song" id="sng13" onClick="playsong(13)">Tum_Ho</div>
+                        <audio  data-key="0" src='songs/Aur_Ho.mp3'></audio>
+                        <audio  data-key="1" src='songs/Birthday_Bash.mp3'></audio>
+                        <audio  data-key="2" src='songs/Haawa_Haawa.mp3'></audio>
+                      
+                        <audio  data-key="3" src='songs/Jo_Bhi_Main.mp3'></audio>
+                        <audio  data-key="4" src='songs/Katiya_Karun.mp3'></audio>
+                        <audio  data-key="5" src='songs/Naadaan_Parindey.mp3'></audio>
+                        <audio  data-key="6" src='songs/O_Re_Khuda.mp3'></audio>
+                        <audio  data-key="7" src='songs/One_Dream.mp3'></audio>
+                        <audio  data-key="8" src='songs/Phir_Se_Ud_Chala.mp3'></audio>
+                        <audio  data-key="9" src='songs/Saadda_Haq.mp3'></audio>
+                        <audio  data-key="10" src='songs/Saadi_Galli_Aaja.mp3'></audio>
+                        <audio  data-key="11" src='songs/Sheher_Mein.mp3'></audio>
+                        <audio  data-key="12" src='songs/The_Meeting_Place.mp3'></audio>
+                        <audio  data-key="13" src='songs/Tum_Ho.mp3'></audio>
                     </div>
 
                 </div>
 
 
-              
 
-                   
-                    <audio src="songs/Tum_Ho.mp3"></audio>
-               
+
+
+
+
             </div>
         </section>
         <section class="piano hidden">
@@ -135,7 +154,7 @@
     </div>
 
 
-    <script src="javascript.js" type="text/javascript">
+    <script src="main.js" type="text/javascript">
 
     </script>
 </body>
