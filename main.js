@@ -1,6 +1,4 @@
  var drumset = false;
- 
- 
  var currenttrack = 0;
  var song = document.querySelector('audio[data-key="${currenttrack}"]');
  var playlist = [
@@ -43,8 +41,7 @@
 
  });
 
- function toggleSong() {
-
+ function PlayPauseSong() {
      // var song = document.querySelector('audio');
      if (song.paused == true) {
          console.log('Playing');
@@ -57,11 +54,9 @@
      }
  }
  $('.play-icon').on('click', function () {
-     toggleSong();
+     PlayPauseSong();
  });
  $('#prev').on('click', function () {
-     
-    
      currenttrack = currenttrack - 1;
       if (song != null) {
        song.src="songs/"+playlist[currenttrack]+".mp3";
@@ -79,9 +74,7 @@
      },500);
      $('.article').html(playlist[currenttrack]);
  });
- $('#next').on('click', function () {
-   
-     
+ $('#next').on('click', function () {        
      currenttrack = currenttrack + 1;
       if (song != null) {
        song.src="songs/"+playlist[currenttrack]+".mp3";
@@ -103,37 +96,30 @@
 
  $('body').on('keypress', function (event) {
      if (event.keyCode == 32) {
-         toggleSong();
+         PlayPauseSong();
      }
  });
 
- function fancyTimeFormat(time) {
-     // Hours, minutes and seconds
+ function processformat(time) {    
      var hrs = ~~(time / 3600);
      var mins = ~~((time % 3600) / 60);
      var secs = time % 60;
-
-     // Output like "1:01" or "4:03:59" or "123:03:59"
      var ret = "";
-
      if (hrs > 0) {
          ret += "" + hrs + ":" + (mins < 10 ? "0" : "");
      }
-
      ret += "" + mins + ":" + (secs < 10 ? "0" : "");
      ret += "" + secs;
      return ret;
  }
-
- function updateCurrentTime() {
-     //var song = document.querySelector('audio');
-     var currentTime = Math.floor(song.currentTime);
-     currentTime = fancyTimeFormat(currentTime);
+ function updateCT() {                 //CT current time     
+     var CT = Math.floor(song.currentTime);
+     CT = processformat(CT);
      var duration = Math.floor(song.duration);
-     duration = fancyTimeFormat(duration)
-     $('.time-elapsed').text(currentTime);
+     duration = processformat(duration)
+     $('.time-elapsed').text(CT);
      $('.song-duration').text(duration);
-     if (currentTime == duration) {
+     if (CT == duration) {
          $('#next').click();
          resetactivesong();
          $("#sng" + id).addClass("Active");
@@ -144,8 +130,8 @@
      // var song = document.querySelector('audio');
      var progress = document.querySelector('#progress');
      var value = 0;
-     if (song.currentTime > 0) {
-         value = Math.floor((100 / song.duration) * song.currentTime);
+     if (song.CT > 0) {
+         value = Math.floor((100 / song.duration) * song.CT);
          console.log(progress);
      }
      progress.style.width = value + "%";
@@ -156,9 +142,9 @@
 
 
  function progressbar() {
-     updateCurrentTime();
+     updateCT();
      setInterval(function () {
-         updateCurrentTime();
+         updateCT();
      }, 1000);
      updateProgress();
      setInterval(function () {
@@ -191,7 +177,7 @@
          const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
          if (!audio) return;
          key.classList.add('playing');
-         audio.currentTime = 0;
+         audio.CT = 0;
          audio.play();
      }
  }

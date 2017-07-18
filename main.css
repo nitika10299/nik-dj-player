@@ -233,7 +233,7 @@ body{
   padding: 0px !important;
     margin-top: -16px !important;
     margin-top: -16px !important;
-    background:url("images/pexels-photo-96380.jpeg");
+    background:url("images/bg.jpg");
         height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,7 +272,7 @@ nav ul li a {
 
 nav ul li a:hover ,nav ul li a:focus
 {
-  color:yellow !important;
+  color:blue !important;
 }
 .songs
 {
@@ -307,14 +307,15 @@ border:3px solid red;
 }
 .fa-pause
 {
+  font-size: 20px;
         position: absolute;
     margin-top: 5px;
     color: white;
     color: white;
 }
-.widget{
+.playerS{
 padding: 10px;
-    background: url(http://maxme-life.ru/tests/noise1.png), #ffe106;
+    background: rgba(33, 80, 173, 0.79);
     width: 874px;
     height: 426px;
     box-sizing: border-box;
@@ -366,6 +367,7 @@ padding: 10px;
 }
 
 .article{
+  color: antiquewhite;
      text-shadow: 0 1px 0px rgba(255,255,255,.8);
     font-family: 'Alegreya', serif;
     position: absolute;
@@ -398,7 +400,7 @@ padding: 10px;
 
 #next{
   background:url(http://maxme-life.ru/tests/next.png);
-        margin-left: 16px;
+        margin-left: 26px;
 
 }
 .time{
@@ -450,9 +452,9 @@ padding: 10px;
 }
 .duration
 {
+  color: white;
     font-family: 'Alegreya', serif;
-    
-        width: 22%;
+    width: 22%;
     float: right;
     margin-right: 150px;
     margin-top: 10px;
@@ -460,8 +462,8 @@ padding: 10px;
 #progressBar { 
    border:1px solid #aaa; 
    color:#fff; 
-   width:295px; 
-   height:20px;
+   width:325px; 
+   height:10px;
 }
 span#progress {
    background-color:black; 
@@ -485,13 +487,13 @@ display: block !important;
 .keys {
   display: flex;
   flex: 1;
-  margin-top: 20%;
+  margin-top: 10%;
   align-items: center;
   justify-content: center;
 }
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid #ea4141;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -501,13 +503,13 @@ display: block !important;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  text-shadow: 0 0 .5rem #ea4141;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: blue;
+  box-shadow: 0 0 1rem blue;
 }
 
 kbd {
@@ -519,8 +521,8 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #ea4141;
 }
 .sir a{
-color: yellow ;
+color: blue ;
 }
