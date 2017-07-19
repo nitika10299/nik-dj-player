@@ -130,8 +130,8 @@
      // var song = document.querySelector('audio');
      var progress = document.querySelector('#progress');
      var value = 0;
-     if (song.CT > 0) {
-         value = Math.floor((100 / song.duration) * song.CT);
+     if (song.currentTime > 0) {
+         value = Math.floor((100 / song.duration) * song.currentTime);
          console.log(progress);
      }
      progress.style.width = value + "%";
